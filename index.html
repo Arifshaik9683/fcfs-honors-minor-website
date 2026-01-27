@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FCFS Ticket Counter</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1><i class="fa-solid fa-ticket"></i> FCFS Ticket Counter</h1>
+        <button class="dark-btn" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <div class="box">
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="bookTicket()">
+            <i class="fa-solid fa-plus"></i> Book Ticket
+        </button>
+    </div>
+
+    <p id="msg"></p>
+
+    <div class="box">
+        <h3><i class="fa-solid fa-users"></i> Current Queue</h3>
+        <ul id="queueList"></ul>
+    </div>
+
+    <div class="box">
+        <button class="serve-btn" onclick="serveCustomer()">
+            <i class="fa-solid fa-play"></i> Serve Next
+        </button>
+    </div>
+
+    <footer>
+        <p>FCFS Scheduling Demo | Student Project</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
