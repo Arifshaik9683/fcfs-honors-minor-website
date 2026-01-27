@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.dark-btn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+}
+
+.box {
+    margin-top: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #667eea;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.02);
+}
+
+.serve-btn {
+    background: #38a169;
+}
+
+.serve-btn:hover {
+    background: #2f855a;
+}
+
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: #f7fafc;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+
+/* Dark Mode */
+.dark {
+    background: #1a202c;
+}
+
+.dark .container {
+    background: #2d3748;
+}
+
+.dark h1,
+.dark h3,
+.dark p,
+.dark li {
+    color: #f7fafc;
+}
+
+.dark input {
+    background: #4a5568;
+    color: #ffffff;
+    border: 1px solid #718096;
+}
+
+.dark li {
+    background: #4a5568;
+}
