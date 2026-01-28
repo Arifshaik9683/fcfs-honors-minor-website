@@ -23,7 +23,7 @@ function serveCustomer() {
     }
 
     let served = queue.shift(); // FCFS serve
-    alert("Now Serving: " + served);
+    alert("Enter a theater and take a seat: " + served);
     displayQueue();
 }
 
@@ -40,3 +40,4 @@ function displayQueue() {
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
 }
+
